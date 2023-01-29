@@ -2,7 +2,7 @@
 
 - Path
 
-![User Variables](E:\Backup\environment-quick-rebuild\envs\pics\user.png)
+![User Variables](/envs/pics/user.png)
 
 - POSH_THEMES_PATH
 
@@ -10,4 +10,4 @@
 
 # System Variables
 
-![sys](E:\Backup\environment-quick-rebuild\envs\pics\sys.png)
+![sys](/envs/pics/sys.png)
