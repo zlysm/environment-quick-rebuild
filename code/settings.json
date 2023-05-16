@@ -143,7 +143,6 @@
     "editor.inlineSuggest.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.unicodeHighlight.nonBasicASCII": false,
-    "workbench.colorTheme": "One Dark Pro Darker",
     
     "code-runner.runInTerminal": true,
 
@@ -155,18 +154,16 @@
     "editor.lineHeight": 30,
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
 
-    //matlab
-
     "matlab.mlintpath": "D:\\MathWorks\\bin\\win64\\mlint.exe",
     "matlab.matlabpath": "D:\\MathWorks\\bin\\matlab.exe",
-
+    "code-runner.ignoreSelection": true,
     "code-runner.executorMap": {
         "matlab": "cd $dir && matlab -nosplash -nodesktop -r $fileNameWithoutExt",
 
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
@@ -234,12 +231,29 @@
     "explorer.confirmDelete": false,
     "java.project.encoding": "setDefault",
     "python.defaultInterpreterPath": "D:\\Condas\\conda_test\\python.exe",
+    "python.terminal.activateEnvironment": false,
     "terminal.integrated.fontFamily": "DejavuSansMono NF",
     "grunt.autoDetect": "on",
     "cmake.configureOnOpen": true,
     "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
-    "cmake.mingwSearchDirs": [
+    "cmake.additionalCompilerSearchDirs": [
         "C:\\Program Files\\CMake\\bin"
     ],
     "cmake.generator": "MinGW Makefiles",
+    "editor.codeActionsOnSave": {},
+    "json.schemas": [],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -nologo",
+    "remote.SSH.remotePlatform": {
+        "139.59.242.237": "linux"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+        "args": ["-nologo"]
+    },
 }
