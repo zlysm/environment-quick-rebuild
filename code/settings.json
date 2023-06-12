@@ -148,10 +148,8 @@
 
     "files.autoGuessEncoding": true,
     "editor.renderWhitespace": "all",
-    "editor.fontFamily": "Dejavu Sans Mono",
-    "editor.fontLigatures": false,
-    "editor.fontSize": 16,
-    "editor.lineHeight": 30,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 17,
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
 
     "matlab.mlintpath": "D:\\MathWorks\\bin\\win64\\mlint.exe",
@@ -222,15 +220,17 @@
     "workbench.startupEditor": "none",
     "github.copilot.enable": {
         "*": true,
-        "yaml": false,
         "plaintext": false,
-        "markdown": true
+        "markdown": true,
+        "scminput": false,
+        "yaml": false,
+        "python": true
     },
     "debug.onTaskErrors": "showErrors",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "java.project.encoding": "setDefault",
-    "python.defaultInterpreterPath": "D:\\Condas\\conda_test\\python.exe",
+    "python.defaultInterpreterPath": "D:\\Condas\\d2l\\python.exe",
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.fontFamily": "DejavuSansMono NF",
     "grunt.autoDetect": "on",
@@ -240,7 +240,6 @@
         "C:\\Program Files\\CMake\\bin"
     ],
     "cmake.generator": "MinGW Makefiles",
-    "editor.codeActionsOnSave": {},
     "json.schemas": [],
     "[python]": {
         "editor.formatOnType": true
@@ -251,9 +250,14 @@
         "139.59.242.237": "linux"
     },
     "git.openRepositoryInParentFolders": "always",
-    "workbench.colorTheme": "One Dark Pro Darker",
     "terminal.integrated.automationProfile.windows": {
         "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
         "args": ["-nologo"]
     },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Monokai",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 30,
+    "notebook.markup.fontSize": 18,
+    "notebook.output.fontFamily": "Consolas",
 }
