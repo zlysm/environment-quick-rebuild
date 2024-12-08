@@ -1,5 +1,4 @@
 {
-    //latex
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.showContextMenu": true,
     "latex-workshop.intellisense.package.enabled": true,
@@ -114,150 +113,69 @@
     "latex-workshop.latex.autoClean.run": "onFailed",
     "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
-    //使用 SumatraPDF 预览编译好的PDF文件
-    // 设置VScode内部查看生成的pdf文件
-    "latex-workshop.view.pdf.viewer": "external",
-    // PDF查看器用于在\ref上的[View on PDF]链接
-    "latex-workshop.view.pdf.ref.viewer":"auto",
-    // 使用外部查看器时要执行的命令。此功能不受官方支持。
-    "latex-workshop.view.pdf.external.viewer.command": "D:/SumatraPDF/SumatraPDF.exe", 
-    // 使用外部查看器时，latex-workshop.view.pdf.external.view .command的参数。此功能不受官方支持。%PDF%是用于生成PDF文件的绝对路径的占位符。
-    "latex-workshop.view.pdf.external.viewer.args": [
-        "%PDF%"
-    ],
-    // 将synctex转发到外部查看器时要执行的命令。此功能不受官方支持。
-    "latex-workshop.view.pdf.external.synctex.command": "D:/SumatraPDF/SumatraPDF.exe", 
-    // latex-workshop.view.pdf.external.synctex的参数。当同步到外部查看器时。%LINE%是行号，%PDF%是生成PDF文件的绝对路径的占位符，%TEX%是触发syncTeX的扩展名为.tex的LaTeX文件路径。
-    "latex-workshop.view.pdf.external.synctex.args": [
-        "-forward-search",
-        "%TEX%",
-        "%LINE%",
-        "-reuse-instance",
-        "-inverse-search",
-        "\"D:/Microsoft VS Code/Code.exe\" \"D:/Microsoft VS Code\resources/app/out/cli.js\" -r -g \"%f:%l\"", 
-        "%PDF%"
-    ],
-
-    "terminal.integrated.enableMultiLinePasteWarning": false,
     "editor.inlineSuggest.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.unicodeHighlight.nonBasicASCII": false,
-    
-    "code-runner.runInTerminal": true,
-
     "files.autoGuessEncoding": true,
     "editor.renderWhitespace": "all",
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 17,
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-
-    "matlab.mlintpath": "D:\\MathWorks\\bin\\win64\\mlint.exe",
-    "matlab.matlabpath": "D:\\MathWorks\\bin\\matlab.exe",
-    "code-runner.ignoreSelection": true,
-    "code-runner.executorMap": {
-        "matlab": "cd $dir && matlab -nosplash -nodesktop -r $fileNameWithoutExt",
-
-        "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "php": "php",
-        "python": "python -u",
-        "perl": "perl",
-        "perl6": "perl6",
-        "ruby": "ruby",
-        "go": "go run",
-        "lua": "lua",
-        "groovy": "groovy",
-        "powershell": "powershell -ExecutionPolicy ByPass -File",
-        "bat": "cmd /c",
-        "shellscript": "bash",
-        "fsharp": "fsi",
-        "csharp": "scriptcs",
-        "vbscript": "cscript //Nologo",
-        "typescript": "ts-node",
-        "coffeescript": "coffee",
-        "scala": "scala",
-        "swift": "swift",
-        "julia": "julia",
-        "crystal": "crystal",
-        "ocaml": "ocaml",
-        "r": "Rscript",
-        "applescript": "osascript",
-        "clojure": "lein exec",
-        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-        "racket": "racket",
-        "scheme": "csi -script",
-        "ahk": "autohotkey",
-        "autoit": "autoit3",
-        "dart": "dart",
-        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-        "haskell": "runhaskell",
-        "nim": "nim compile --verbosity:0 --hints:off --run",
-        "lisp": "sbcl --script",
-        "kit": "kitc --run",
-        "v": "v run",
-        "sass": "sass --style expanded",
-        "scss": "scss --style expanded",
-        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "sml": "cd $dir && sml $fileName"
-    },
-
-    "files.associations": {
-        "*.m": "matlab"
-    },
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.default.cppStandard": "c++11",
     "C_Cpp.default.cStandard": "c11",
     "workbench.startupEditor": "none",
     "github.copilot.enable": {
         "*": true,
-        "plaintext": false,
+        "plaintext": true,
         "markdown": true,
         "scminput": false,
         "yaml": false,
-        "python": true
+        "python": true,
+        "cpp": true
     },
     "debug.onTaskErrors": "showErrors",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "java.project.encoding": "setDefault",
-    "python.defaultInterpreterPath": "D:\\Condas\\d2l\\python.exe",
-    "python.terminal.activateEnvironment": false,
-    "terminal.integrated.fontFamily": "DejavuSansMono NF",
     "grunt.autoDetect": "on",
-    "cmake.configureOnOpen": true,
-    "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
-    "cmake.additionalCompilerSearchDirs": [
-        "C:\\Program Files\\CMake\\bin"
-    ],
-    "cmake.generator": "MinGW Makefiles",
     "json.schemas": [],
     "[python]": {
-        "editor.formatOnType": true
-    },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -nologo",
-    "remote.SSH.remotePlatform": {
-        "139.59.242.237": "linux"
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "git.openRepositoryInParentFolders": "always",
-    "terminal.integrated.automationProfile.windows": {
-        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-        "args": ["-nologo"]
-    },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "One Monokai",
-    "editor.fontLigatures": true,
+    "notebook.markup.fontSize": 16,
+    "cmake.showOptionsMovedNotification": false,
+    "notebook.output.fontFamily": "Fira Code",
+    "terminal.integrated.defaultProfile.windows": "PowerShell7",
+    "terminal.integrated.automationProfile.windows": {
+        "path": "D:\\PowerShell\\7\\pwsh.exe",
+        "args": [
+            "-nologo"
+        ]
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell7": {
+            "source": "PowerShell",
+            "path": "D:\\PowerShell\\7\\pwsh.exe",
+            "args": [
+                "-nologo"
+            ]
+        },
+    },
+    "terminal.integrated.fontSize": 13,
     "editor.lineHeight": 30,
-    "notebook.markup.fontSize": 18,
-    "notebook.output.fontFamily": "Consolas",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "jupyter.askForKernelRestart": false,
+    "explorer.confirmPasteNative": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "latex-workshop.formatting.latex": "latexindent",
+    "debug.console.fontSize": 13,
+    "debug.inlineValues": "on",
+    "terminal.integrated.enableMultiLinePasteWarning": false
 }
